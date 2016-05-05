@@ -1,0 +1,22 @@
+{
+  "name": "socket",
+  "homepage": "https://github.com/pykafe/appsocket",
+  "authors": [
+    "mariano <dedeus_mariano@yahoo.com>"
+  ],
+  "description": "try use socket",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
