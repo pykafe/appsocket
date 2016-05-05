@@ -7,5 +7,5 @@ from django_sse.redisqueue import RedisQueueView
 class HomePage(TemplateView):
     template_name = 'index.html'
 
-    class SSE(RedisQueueView):
+class SSE(RedisQueueView):
         pass

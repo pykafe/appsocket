@@ -60,3 +60,10 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# exclude bower components
+bower_components
+
+
+# exclude db sqlite3
+db.sqlite3
