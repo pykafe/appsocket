@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'socketapp',
-    'gunicorn',
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -125,8 +125,9 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'bower_components'),
 )
 
-
-REDIS_SSEQUEUE_CONNECTION_SETTINGS = {
-    'location': 'localhost:6379',
-    'db': 0,
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgiref.inmemory.ChannelLayer",
+        "ROUTING": "socketapp.routing.channel_routing",
+    },
 }

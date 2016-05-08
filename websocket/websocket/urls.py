@@ -14,12 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.conf.urls import patterns, include, url
+from django.conf.urls import patterns, url
 from socketapp import views
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^sse/$', views.SSE.as_view(), name='sse'),
     url(r'^$', views.HomePage.as_view(), name='homepage'),
 ]
